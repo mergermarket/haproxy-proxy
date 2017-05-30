@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+mv -f /var/log/haproxy.log /var/log/haproxy.log.1
+killall -s HUP rsyslogd
